@@ -1,9 +1,10 @@
-// Sample product data
+// Kids products data
 const products = [
-    { id: 1, name: "Laptop", price: 750, image: "https://via.placeholder.com/150" },
-    { id: 2, name: "Smartphone", price: 500, image: "https://via.placeholder.com/150" },
-    { id: 3, name: "Headphones", price: 100, image: "https://via.placeholder.com/150" },
-    { id: 4, name: "Watch", price: 200, image: "https://via.placeholder.com/150" }
+    { id: 1, name: "Teddy Bear", price: 25, image: "https://via.placeholder.com/150/ffb6c1/000000?text=Teddy+Bear" },
+    { id: 2, name: "Toy Car", price: 15, image: "https://via.placeholder.com/150/add8e6/000000?text=Toy+Car" },
+    { id: 3, name: "Doll", price: 20, image: "https://via.placeholder.com/150/dda0dd/000000?text=Doll" },
+    { id: 4, name: "Kids T-Shirt", price: 12, image: "https://via.placeholder.com/150/98fb98/000000?text=T-Shirt" },
+    { id: 5, name: "Building Blocks", price: 30, image: "https://via.placeholder.com/150/f0e68c/000000?text=Blocks" },
   ];
   
   let cart = [];
@@ -22,14 +23,14 @@ const products = [
     productList.appendChild(div);
   });
   
-  // Add to Cart function
+  // Add to Cart
   function addToCart(id) {
     const product = products.find(p => p.id === id);
     cart.push(product);
     updateCart();
   }
   
-  // Update Cart UI
+  // Update Cart
   function updateCart() {
     document.getElementById("cart-count").innerText = cart.length;
     
@@ -47,14 +48,14 @@ const products = [
     document.getElementById("cart-total").innerText = total.toFixed(2);
   }
   
-  // Toggle cart section
+  // Toggle Cart Section
   document.getElementById("cart-link").addEventListener("click", () => {
     document.getElementById("cart-section").classList.toggle("hidden");
   });
   
-  // Checkout function
+  // Checkout
   function checkout() {
-    alert("Thank you for your purchase!");
+    alert("🎉 Thank you for shopping for your kids!");
     cart = [];
     updateCart();
     document.getElementById("cart-section").classList.add("hidden");

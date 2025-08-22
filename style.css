@@ -1,16 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     margin: 0;
     padding: 0;
+    background: #fff8f0;
   }
   
   header {
-    background: #333;
+    background: #ff7eb9;
     color: #fff;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
   }
   
   header a {
@@ -27,11 +32,16 @@ body {
   }
   
   .product {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 2px solid #ffe0f0;
+    border-radius: 12px;
     padding: 15px;
     text-align: center;
-    background: #f9f9f9;
+    background: #fff;
+    transition: 0.3s;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
   }
   
   .product img {
@@ -41,17 +51,18 @@ body {
   }
   
   button {
-    background: #007bff;
+    background: #ff9a76;
     border: none;
     padding: 10px;
     color: white;
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
+    font-size: 14px;
   }
   
   button:hover {
-    background: #0056b3;
+    background: #ff6f61;
   }
   
   .hidden {
@@ -60,7 +71,7 @@ body {
   
   #cart-section {
     padding: 20px;
-    border-top: 2px solid #333;
-    background: #f2f2f2;
+    border-top: 3px solid #ff7eb9;
+    background: #fff0f6;
   }
   
